@@ -5,7 +5,7 @@ const AdminMessage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:3000/messages")
+    fetch("https://port-folio-5r2r.onrender.com//messages")
       .then((res) => res.json())
       .then((data) => {
         setMessages(data.reverse());
