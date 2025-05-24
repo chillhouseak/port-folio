@@ -1,10 +1,12 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const port = 3000;
+const port = process.env.PORT||3000;
 app.use(cors());
 app.use(express.json());
-
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 // MongoDB Setup
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = "mongodb+srv://portfolio-my:port12345@cluster0.ro6ip.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
