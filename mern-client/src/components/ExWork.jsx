@@ -6,7 +6,7 @@ const ExWork = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    axios.get("https://port-folio-5r2r.onrender.com//projects").then((res) => {
+    axios.get("https://port-folio-5r2r.onrender.com/projects").then((res) => {
       setProjects(res.data.slice(0, 3));
     });
   }, []);

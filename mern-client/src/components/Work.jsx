@@ -4,7 +4,7 @@ const Work = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch("https://port-folio-5r2r.onrender.com//projects")
+    fetch("https://port-folio-5r2r.onrender.com/projects")
       .then(res => res.json())
       .then(data => setProjects(data.reverse()))
       .catch(err => console.error("Failed to fetch projects:", err));
