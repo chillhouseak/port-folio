@@ -53,7 +53,7 @@ const ContactMe
     setSuccess('');
 
     try {
-      const response = await fetch('https://port-folio-5r2r.onrender.com//contact', {
+      const response = await fetch('https://port-folio-5r2r.onrender.com/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
