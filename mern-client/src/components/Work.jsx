@@ -38,7 +38,7 @@ const Work = () => {
                 <h3 className="text-xl font-semibold text-gray-800">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 text-sm line-clamp-3 mt-1">
+                <p className="text-gray-600 text-sm  mt-1">
                   {project.description}
                 </p>
               </div>
